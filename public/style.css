@@ -1,0 +1,236 @@
+body{
+    background-color: #0E0A0A;
+    color: #EEEEE6;
+    font-family: "Montserrat", serif;
+    max-width: 100vw;
+}
+.mobile{
+    display: none;
+}
+.intro2{
+    margin: 5vh, 5vw;
+    text-align: center;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro2 .sub-intro{
+    height: 45vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro2 .sub-intro .curtainTop{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    background-color: #0E0A0A;
+}
+
+.intro2 .sub-intro .curtainBottom{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    z-index: 1;
+    background-color: #0E0A0A;
+}
+
+.intro2 .sub-intro img{
+    height: 100%;
+    border-radius: 47% 47% 0 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.intro2 h1{
+    position: relative;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 6rem;
+    color: #EEEEE6;
+    font-weight: 100;
+    letter-spacing: 5px;
+    z-index: 100;
+}
+
+.intro2 h4{
+    color: #ABA9A8;
+    font-family: "Italiana", serif;
+    letter-spacing: 10px;
+    z-index: 10;
+    font-weight: 500;
+}
+
+.about{
+    color: #EEEEE6;
+    min-height: 55vh;
+    margin: 5vh 5vw;
+    padding: 5vh 5vw;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 5vh 5vw;
+    padding: 5vh 5vw;
+}
+
+.skills span{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.skills .col-6 p{
+    color: #ABA9A8;
+    font-size: .8rem;
+    font-style: italic;
+}
+.skills li{
+    font-size: .9rem;
+}
+
+.skill li{
+    margin-bottom: .5rem;
+}
+  
+.projects{
+    color: #EEEEE6;
+    margin: 5vh 5vw;
+    padding: 5vh 5vw;
+}
+
+.projects .row:nth-of-type(odd){
+    margin:20px 0 0 15vw;
+}
+
+.projects .row:nth-of-type(even){
+    margin:20px 15vw 0 0;
+}
+
+.projects .row .col-1 h4{
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+.projects .row .col-6, .projects .row .col-5{
+    font-size: .9rem;
+    font-family: "Montserrat", serif;
+    padding-top: 2.5rem;
+}
+
+.projects h4{
+    font-family: "Italiana", serif;  
+}
+.projects img{
+    width: 100%;
+    border: solid 1px #EEEEE6;
+}
+
+.projects a{
+    color: #EEEEE6;
+}
+
+.footer{
+    color: #EEEEE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    margin: 5vh 5vw;
+    padding: 5vh 5vw;
+}
+
+.footer .col-2{
+    text-align: right;
+}
+.footer img{
+    width: 100%;
+    border-radius: 70% 70% 0 0;
+}
+
+.footer span{
+    font-family: "Italiana", serif;
+    display: inline-block;
+    width: 100px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+.footer a{
+    color: #EEEEE6;
+    text-decoration: none;
+}
+
+.footer .link{
+    text-align: center;
+}
+
+.footer .link i{
+    font-size: larger;
+}
+
+@media only screen and (orientation: portrait) and (max-width: 500px){
+  
+    .intro2{
+        width: 100vw;
+        min-height: 120vh;
+    }
+    .lappy{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .intro2 h4{
+        font-size: 1rem;
+    }
+    .projects .row:nth-of-type(odd), .projects .row:nth-of-type(even){
+        margin: 0;
+        padding-top: 20px;
+        border-bottom: solid .5px #ABA9A8;
+    }
+
+    .projects .row .col-1{
+        display: none;
+    }
+    .projects .row .col-6, .projects .row .col-5, .skills .col-6, .footer .col-2, .footer .col-5{
+       display: block;
+       width: 100%;
+       padding-top: 0;
+    }
+    .skill::before{
+        content: "SKILLS";
+        padding-bottom: 10px;
+    }
+    .skill{
+        border-top: solid .5px #ABA9A8;
+        padding-top: 20px !important;
+    }
+
+    .footer .col-2{
+        text-align: center;
+    }
+
+    .footer .col-5{
+        font-size: .8rem;
+        padding-top: 20px;
+        text-align: justify;
+    }
+    .footer span{
+        display: inline;
+        margin: 0;
+
+    }
+    .footer .col-2 img{
+        height: 20vh;
+        width: auto;
+    }
+}
