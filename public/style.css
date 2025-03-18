@@ -180,7 +180,7 @@ body{
   
     .intro2{
         width: 100vw;
-        min-height: 120vh;
+        min-height: 100vh;
     }
     .lappy{
         display: none;
